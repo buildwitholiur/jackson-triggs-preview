@@ -478,9 +478,9 @@ body {
 /* Hero Area */
 
 .hero-area {
-  min-height: 800px;
+  height: calc(100vh - 137px);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/gallery-1.jpg");
+    url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -587,7 +587,7 @@ body {
 
 .signature__image {
   width: fit-content;
-  height: 60px;
+  height: 80px;
   margin-top: 50px;
 }
 
@@ -601,13 +601,15 @@ body {
 
 .vineyards {
   display: flex;
-  align-items: flex-start;
   gap: 40px;
   margin-top: 48px;
 }
 
 .vineyards__content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .vineyards__content h3 {
@@ -621,7 +623,8 @@ body {
   gap: 15px;
 }
 
-.vineyards__images {
+.vineyards__images,
+.vineyards__content-images {
   width: 100%;
   max-width: 600px;
   display: grid;
@@ -645,10 +648,7 @@ body {
 }
 
 .product__items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .product__item {
@@ -658,6 +658,38 @@ body {
 }
 
 .product__item img {
+  object-fit: contain;
+}
+
+.product__arrows {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.product__arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #231f20;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.product__arrow img {
+  width: 18px;
+  height: auto;
   object-fit: contain;
 }
 
@@ -678,14 +710,14 @@ body {
 
 .gallery {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .gallery__left {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .gallery__right {
@@ -693,28 +725,20 @@ body {
   max-width: 400px;
 }
 
-.gallery__product-image {
-  background: #f5f4f0;
-  padding: 35px;
+.gallery__image {
   height: 350px;
 }
 
-.gallery__product-image img {
-  object-fit: contain;
-}
-
-.gallery__product-image1 {
+.gallery__image1 {
   grid-column: 1 / span 2;
-  background: #4c1029;
 }
 
-.gallery__product-image2 {
-  background: #f5b122;
+.gallery__image4 {
+  height: 720px;
 }
 
-.gallery__product-image4 {
-  height: 730px;
-  background: #1a1c07;
+.gallery__image1 img {
+  object-position: bottom;
 }
 
 /* Gallery Area */

@@ -18,6 +18,9 @@
     <!-- Custom Font -->
     <link rel="stylesheet" href="fonts/stylesheet.css" />
 
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     <!-- Custom CSS File -->
     <link
       rel="stylesheet"
@@ -86,17 +89,14 @@
               alt="hero logo"
             />
 
-            <a href="#" class="custom__btn">
-              <img src="images/wine.svg" alt="wine" />
-              Shop Now
-            </a>
+            <a href="#about" class="custom__btn"> Learn More </a>
           </div>
         </div>
       </section>
       <!-- Hero Area -->
 
       <!-- About Area -->
-      <section class="about-area">
+      <section id="about" class="about-area">
         <div class="about__bg-layer1"></div>
         <div class="about__bg-layer2"></div>
 
@@ -143,8 +143,6 @@
               </div>
 
               <picture>
-                <source srcset="images/signature.webp" type="image/webp" />
-                <source srcset="images/signature.png" type="image/png" />
                 <img
                   class="signature__image"
                   src="images/signature.png"
@@ -169,42 +167,57 @@
             <div class="vineyards__images">
               <img
                 class="vineyards__image vineyards__image1"
-                src="images/gallery-2.jpg"
+                src="images/vineyard-1.jpg"
                 alt=""
               />
               <img
                 class="vineyards__image vineyards__image2"
-                src="images/gallery-2.jpg"
+                src="images/vineyard-2.jpg"
                 alt=""
               />
               <img
                 class="vineyards__image vineyards__image3"
-                src="images/gallery-2.jpg"
+                src="images/vineyard-3.jpg"
                 alt=""
               />
             </div>
 
             <div class="vineyards__content">
-              <h3 class="font--18">
-                A Challenging Season, A Commitment to the Future
-              </h3>
+              <div class="vineyards__content-details">
+                <h3 class="font--18">
+                  A Challenging Season, A Commitment to the Future
+                </h3>
 
-              <div class="vineyards__content-descs">
-                <p>
-                  In January 2024, the Okanagan experienced one of its coldest
-                  winters on record, with temperatures dropping below -20°C for
-                  an extended stretch. This deep freeze caused significant
-                  damage to vineyards and led to major crop losses across the
-                  region.
-                </p>
+                <div class="vineyards__content-descs">
+                  <p>
+                    In January 2024, the Okanagan experienced one of its coldest
+                    winters on record, with temperatures dropping below -20°C
+                    for an extended stretch. This deep freeze caused significant
+                    damage to vineyards and led to major crop losses across the
+                    region.
+                  </p>
 
-                <p>
-                  While it’s been a tough season, it’s also a reminder of the
-                  resilience and dedication that define BC’s winemaking
-                  community. At Jackson-Triggs, we remain committed to crafting
-                  high-quality Canadian wines and continuing the legacy we’re
-                  proud to be part of.
-                </p>
+                  <p>
+                    While it’s been a tough season, it’s also a reminder of the
+                    resilience and dedication that define BC’s winemaking
+                    community. At Jackson-Triggs, we remain committed to
+                    crafting high-quality Canadian wines and continuing the
+                    legacy we’re proud to be part of.
+                  </p>
+                </div>
+              </div>
+
+              <div class="vineyards__content-images">
+                <img
+                  class="vineyards__image vineyards__image4"
+                  src="images/vineyard-4.jpg"
+                  alt=""
+                />
+                <img
+                  class="vineyards__image vineyards__image5"
+                  src="images/vineyard-5.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -222,30 +235,68 @@
             </div>
             <!-- Section Header -->
 
-            <div class="product__items">
-              <!-- Single Product -->
-              <div class="product__item bg--maroon">
-                <img src="images/jkt-reserve-pinot-grigio.png" alt="" />
-              </div>
-              <!-- Single Product -->
+            <div class="product__items swiper swiper--product">
+              <!-- Slider Arrow -->
+              <div class="product__arrows">
+                <button class="product__arrow product__arrow--prev">
+                  <img src="images/left-arrow.png" alt="arrow" />
+                </button>
 
-              <!-- Single Product -->
-              <div class="product__item bg--yellow">
-                <img src="images/jkt-reserve-sauvblanc.png" alt="" />
+                <button class="product__arrow product__arrow--next">
+                  <img src="images/right-arrow.png" alt="arrow" />
+                </button>
               </div>
-              <!-- Single Product -->
+              <!-- Slider Arrow -->
 
-              <!-- Single Product -->
-              <div class="product__item bg--green">
-                <img src="images/jkt-reserve-chardonnay.png" alt="" />
-              </div>
-              <!-- Single Product -->
+              <div class="swiper-wrapper">
+                <!-- Single Product -->
+                <div class="swiper-slide">
+                  <div class="product__item bg--maroon">
+                    <img src="images/jkt-reserve-pinot-grigio.png" alt="" />
+                  </div>
+                </div>
+                <!-- Single Product -->
 
-              <!-- Single Product -->
-              <div class="product__item bg--blue">
-                <img src="images/jkt-reserve-sauvblanc.png" alt="" />
+                <!-- Single Product -->
+                <div class="swiper-slide">
+                  <div class="product__item bg--yellow">
+                    <img src="images/jkt-reserve-sauvblanc.png" alt="" />
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="swiper-slide">
+                  <div class="product__item bg--green">
+                    <img src="images/jkt-reserve-chardonnay.png" alt="" />
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="swiper-slide">
+                  <div class="product__item bg--blue">
+                    <img src="images/jkt-ries-gewurztraminer.png" alt="" />
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="swiper-slide">
+                  <div class="product__item bg--maroon">
+                    <img src="images/jkt-select-chardonnay.png" alt="" />
+                  </div>
+                </div>
+                <!-- Single Product -->
+
+                <!-- Single Product -->
+                <div class="swiper-slide">
+                  <div class="product__item bg--yellow">
+                    <img src="images/jkt-select-sauvblanc.png" alt="" />
+                  </div>
+                </div>
+                <!-- Single Product -->
               </div>
-              <!-- Single Product -->
             </div>
           </div>
         </div>
@@ -266,46 +317,6 @@
               <!-- Accordion Item -->
               <div class="accordion__item">
                 <button class="accordion__button accordion__button--active">
-                  <span>How did the freeze impact the vineyards?</span>
-
-                  <img
-                    class="accordion__icon"
-                    src="images/arrow-down.svg"
-                    alt="arrow down"
-                  />
-                </button>
-
-                <div class="accordion__content">
-                  <div class="accordion__content-info">
-                    <h4 class="font--18">
-                      A Challenging Season, A Commitment to the Future
-                    </h4>
-
-                    <div class="accordion__content-descs">
-                      <p>
-                        In January 2024, the Okanagan experienced one of its
-                        coldest winters on record, with temperatures dropping
-                        below -20°C for an extended stretch. This deep freeze
-                        caused significant damage to vineyards and led to major
-                        crop losses across the region.
-                      </p>
-
-                      <p>
-                        While it’s been a tough season, it’s also a reminder of
-                        the resilience and dedication that define BC’s
-                        winemaking community. At Jackson-Triggs, we remain
-                        committed to crafting high-quality Canadian wines and
-                        continuing the legacy we’re proud to be part of.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion__item">
-                <button class="accordion__button">
                   <span
                     >Is this only impacting Jackson-Triggs or also all other BC
                     wines?</span
@@ -521,25 +532,19 @@
         <div class="container">
           <div class="gallery">
             <div class="gallery__left">
-              <div
-                class="gallery__image gallery__product-image gallery__product-image1"
-              >
-                <img src="images/jkt-reserve-pinot-grigio.png" alt="" />
+              <div class="gallery__image gallery__image1">
+                <img src="images/gallery-1.jpg" alt="" />
               </div>
-              <div
-                class="gallery__image gallery__product-image gallery__product-image2"
-              >
-                <img src="images/jkt-reserve-sauvblanc.png" alt="" />
-              </div>
-              <div class="gallery__image">
+              <div class="gallery__image gallery__image2">
                 <img src="images/gallery-2.jpg" alt="" />
+              </div>
+              <div class="gallery__image gallery__image3">
+                <img src="images/gallery-3.jpg" alt="" />
               </div>
             </div>
             <div class="gallery__right">
-              <div
-                class="gallery__image gallery__product-image gallery__product-image4"
-              >
-                <img src="images/jkt-reserve-chardonnay.png" alt="" />
+              <div class="gallery__image gallery__image4">
+                <img src="images/gallery-4.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -578,6 +583,7 @@
     <!-- Footer Area -->
 
     <!-- JS Files -->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
