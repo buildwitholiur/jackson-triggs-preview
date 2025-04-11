@@ -237,13 +237,18 @@ body {
 
 .section__heading h2 {
   text-align: center;
+  color: #a8874f;
 }
 
 .custom__accodion {
-  margin-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.accordion__item {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .accordion__button {
@@ -251,17 +256,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
   width: 100%;
-  padding: 15px 0;
   background-color: #ffffff;
   transition: all 0.3s;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 36px;
   font-weight: 600;
   text-align: left;
   color: #000;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button span {
+  flex: 1;
 }
 
 .accordion__icon {
@@ -441,12 +449,60 @@ body {
 
 /* Header Area */
 
+/* Banner Area */
+.banner-area {
+  padding: 80px 0;
+}
+
+.banner {
+  display: flex;
+  gap: 30px;
+}
+
+.banner__left {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.banner__right {
+  width: 100%;
+  max-width: 400px;
+}
+
+.product__image {
+  background: #f5f4f0;
+  padding: 35px;
+  height: 350px;
+}
+
+.product__image img {
+  object-fit: contain;
+}
+
+.product__image1 {
+  grid-column: 1 / span 2;
+  background: #4c1029;
+}
+
+.product__image2 {
+  background: #f5b122;
+}
+
+.product__image4 {
+  height: 730px;
+  background: #1a1c07;
+}
+
+/* Banner Area */
+
 /* Hero Area */
 .hero-area {
   min-height: 700px;
   padding-top: 80px;
   padding-bottom: 80px;
-  background: #f5f4f0;
+  background: #f0ebe2;
 }
 
 .hero {
@@ -470,6 +526,7 @@ body {
 
 .hero h1 {
   margin-bottom: 20px;
+  color: #a8874f;
 }
 
 .hero h1 span {
@@ -478,6 +535,7 @@ body {
 
 .hero__descs p {
   margin-bottom: 20px;
+  color: #231f20;
 }
 
 .hero__descs p:last-of-type {
@@ -494,23 +552,38 @@ body {
   margin-top: 50px;
 }
 
-.hero__items {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.hero__item {
-  height: 350px;
-  object-position: bottom;
-}
-
 /* Hero Area */
 
 /* Faq Area */
 .faq-area {
   padding: 80px 0;
+}
+
+.faq__content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 32px;
+}
+
+.custom__accodion {
+  flex: 1;
+}
+
+.faq__content-images {
+  width: 100%;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.faq__content-image1 {
+  grid-column: 1 / span 2;
+}
+
+.faq__content-image {
+  height: 250px;
 }
 
 /* Faq Area */
