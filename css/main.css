@@ -75,7 +75,7 @@ h6 {
   font-family: "Geomanist";
   font-size: 40px;
   line-height: 60px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -244,8 +244,6 @@ body {
 }
 
 .line-section-heading {
-  border-left: 1px solid #a8874f;
-  padding-left: 25px;
   color: #a8874f;
   width: fit-content;
   text-align: center;
@@ -316,16 +314,13 @@ body {
 }
 
 .accordion__content h4 {
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .accordion__content-info {
   padding-top: 20px;
   padding-left: 20px;
-}
-
-.accordion__content-descs {
-  margin-top: 15px;
 }
 
 .accordion__content-descs p {
