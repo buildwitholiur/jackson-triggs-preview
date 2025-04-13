@@ -58,10 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".product__arrow--prev",
     },
     breakpoints: {
-      320: {
+      0: {
         slidesPerView: 1,
+        spaceBetween: 20,
       },
-      991: {
+      767: {
         slidesPerView: 2,
       },
       1199: {
