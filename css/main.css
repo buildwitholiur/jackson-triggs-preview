@@ -149,6 +149,15 @@ input {
   line-height: 64px;
 }
 
+.font--64 {
+  font-size: 64px;
+  line-height: 84px;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Default CSS Code */
 
 /* 
@@ -320,7 +329,6 @@ body {
 
 .accordion__content-info {
   padding-top: 20px;
-  padding-left: 20px;
 }
 
 .accordion__content-descs p {
@@ -353,14 +361,24 @@ body {
 
 .header__note {
   padding: 16px 20px;
-  background: #000;
+  background: #e9161d;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
 }
 
 .header__note p {
   font-weight: 500;
   color: #fff;
   text-align: center;
+}
+
+.header__note img {
+  width: fit-content;
+  height: 25px;
+  object-fit: contain;
 }
 
 .header__note-close-btn {
@@ -486,21 +504,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-top: 88px;
+  display: flex;
+  align-items: center;
 }
 
-.hero__logo {
-  width: 584px;
-  height: 308px;
-  object-fit: contain;
-  margin-left: auto;
-  margin-right: auto;
+.hero h1 {
+  color: #fff;
+  text-align: center;
 }
 
-.hero .custom__btn {
+.hero img {
+  width: 100%;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 56px;
+  margin-top: 54px;
 }
 
 /* Hero Area */
@@ -653,9 +671,7 @@ body {
 }
 
 .product__item {
-  padding: 35px;
-  height: 350px;
-  background: #f5f4f0;
+  height: 600px;
 }
 
 .product__item img {
