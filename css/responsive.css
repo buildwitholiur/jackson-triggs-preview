@@ -1,6 +1,6 @@
 @media (max-width: 1280.98px) {
   .font--64 {
-    font-size: 50px;
+    font-size: 48px;
     line-height: 60px;
   }
 
@@ -125,7 +125,7 @@
 
   .hero img {
     max-width: 280px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .about-area,
@@ -250,7 +250,7 @@
   }
 
   .hero-area {
-    height: calc(100vh - 130px);
+    height: calc(110vh - 130px);
   }
 
   .product__arrow {
