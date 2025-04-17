@@ -498,10 +498,10 @@ body {
 /* Hero Area */
 
 .hero-area {
-  height: calc(120vh - 137px);
   display: flex;
   align-items: center;
   background: #f5f4f0;
+  padding: 110px 0;
 }
 
 .hero h1 {
@@ -513,11 +513,12 @@ body {
 }
 
 .hero img {
-  width: 100%;
+  width: fit-content;
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 90px;
+  margin-top: 80px;
+  object-fit: contain;
 }
 
 /* Hero Area */
@@ -627,6 +628,7 @@ body {
 .vineyards__images {
   width: 100%;
   max-width: 600px;
+  height: 280px;
 }
 
 .vineyards__content {

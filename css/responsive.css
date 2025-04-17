@@ -72,8 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0;
-    height: calc(110vh - 137px);
+    padding: 90px 0;
   }
 
   .line-section-heading {
@@ -131,7 +130,7 @@
   }
 
   .hero img {
-    max-width: 280px;
+    max-width: 90%;
     margin-top: 40px;
   }
 
@@ -257,7 +256,7 @@
   }
 
   .hero-area {
-    height: calc(110vh - 130px);
+    padding: 80px 0;
   }
 
   .product__arrow {
